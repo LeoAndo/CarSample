@@ -64,21 +64,33 @@ class CarPlaySceneDelegate: UIResponder, CPTemplateApplicationSceneDelegate {
         })
     }
     
+    
+    
+    private var systemImageNames = ["pencil.tip", "folder", "doc", "location", "person.3", "airplane", "bolt.car", "bus.doubledecker", "bicycle"]
+    
     private func setRootTemplate(longitude: String, latitude: String) {
+        
+        let imaegname = systemImageNames.randomElement() ?? "location"
         // UIの設定
-        let requestPermissionButton:CPTextButton = .init(title: "request Permissin", textStyle: .normal, handler: {_ in
+        let requestPermissionButton:CPGridButton = .init(titleVariants: ["request Permissin"], image: UIImage(systemName: imaegname)!, handler: { _ in
             self.model.requestAuthorization()
         })
-        let startLocationButton:CPTextButton = .init(title: "start Location", textStyle: .normal, handler: { _ in
+        let startLocationButton:CPGridButton = .init(titleVariants: ["start Location"], image: UIImage(systemName: imaegname)!, handler: { _ in
             self.model.startTracking()
         })
-        let stopLocationButton:CPTextButton = .init(title: "stop Location", textStyle: .normal, handler: { _ in
+        let stopLocationButton:CPGridButton = .init(titleVariants: ["stop Location"], image: UIImage(systemName: imaegname)!, handler: { _ in
             self.model.stopTracking()
         })
-        let longitudeItem: CPInformationItem = .init(title: "Location longitude: ", detail: String(longitude))
-        let latitudeItem: CPInformationItem = .init(title: "Location Latitude: ", detail: String(latitude))
+        
+        let longitudeItem:CPGridButton = .init(titleVariants: [String(longitude)], image: UIImage(systemName: imaegname)!, handler: { _ in
+            print("clicked longitudeItem")
+        })
+        let latitudeItem:CPGridButton = .init(titleVariants: [String(latitude)], image: UIImage(systemName: imaegname)!, handler: { _ in
+            print("clicked latitudeItem")
+        })
+        
+        let gridTemplate:CPGridTemplate = .init(title: "Location", gridButtons: [requestPermissionButton, startLocationButton, stopLocationButton, longitudeItem, latitudeItem])
         // 位置情報の許可ステータスの表示
-        let informationTemplate:CPInformationTemplate = .init(title: "Location", layout: .leading, items: [longitudeItem, latitudeItem], actions: [requestPermissionButton, startLocationButton, stopLocationButton])
-        self.interfaceController!.setRootTemplate(informationTemplate, animated: false)
+        self.interfaceController!.setRootTemplate(gridTemplate, animated: false)
     }
 }
