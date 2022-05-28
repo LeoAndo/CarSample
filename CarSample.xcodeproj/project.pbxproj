@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAAEC4D628425F4400FADABE /* LocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEC4D528425F4400FADABE /* LocationDataSource.swift */; };
+		AAAEC4D828425F5400FADABE /* CLAuthorizationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEC4D728425F5400FADABE /* CLAuthorizationStatus.swift */; };
 		CBAD9E9724A3E3DD00989CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD9E9624A3E3DD00989CA4 /* AppDelegate.swift */; };
 		CBAD9E9924A3E3DD00989CA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD9E9824A3E3DD00989CA4 /* SceneDelegate.swift */; };
 		CBAD9E9B24A3E3DD00989CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD9E9A24A3E3DD00989CA4 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AAAEC4D528425F4400FADABE /* LocationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataSource.swift; sourceTree = "<group>"; };
+		AAAEC4D728425F5400FADABE /* CLAuthorizationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAuthorizationStatus.swift; sourceTree = "<group>"; };
 		CBAD9E9324A3E3DD00989CA4 /* CarSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAD9E9624A3E3DD00989CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBAD9E9824A3E3DD00989CA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAAEC4D428425F2000FADABE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEC4D528425F4400FADABE /* LocationDataSource.swift */,
+				AAAEC4D728425F5400FADABE /* CLAuthorizationStatus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CBAD9E8A24A3E3DD00989CA4 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +119,7 @@
 		CBAD9E9524A3E3DD00989CA4 /* CarSample */ = {
 			isa = PBXGroup;
 			children = (
+				AAAEC4D428425F2000FADABE /* Model */,
 				CBAD9E9624A3E3DD00989CA4 /* AppDelegate.swift */,
 				CBAD9E9824A3E3DD00989CA4 /* SceneDelegate.swift */,
 				CBAD9E9A24A3E3DD00989CA4 /* ViewController.swift */,
@@ -276,8 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBAD9E9B24A3E3DD00989CA4 /* ViewController.swift in Sources */,
+				AAAEC4D628425F4400FADABE /* LocationDataSource.swift in Sources */,
 				CBAD9E9724A3E3DD00989CA4 /* AppDelegate.swift in Sources */,
 				CBAD9ECA24A3E3FE00989CA4 /* CarPlaySceneDelegate.swift in Sources */,
+				AAAEC4D828425F5400FADABE /* CLAuthorizationStatus.swift in Sources */,
 				CBAD9E9924A3E3DD00989CA4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
