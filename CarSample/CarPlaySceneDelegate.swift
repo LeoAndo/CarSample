@@ -16,7 +16,6 @@ class CarPlaySceneDelegate: UIResponder, CPTemplateApplicationSceneDelegate {
             didConnect interfaceController: CPInterfaceController) {
 
         self.interfaceController = interfaceController
-        
         let soundPlayer = SoundPlayer()
         let item: CPInformationItem = .init(title: "information Title!", detail: "detail!")
         let playButton: CPTextButton = .init(title: "Play", textStyle: .normal, handler:  { _ in
