@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA9F98C02855B01500E1F042 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F98BF2855B01500E1F042 /* SoundPlayer.swift */; };
 		CBAD9E9724A3E3DD00989CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD9E9624A3E3DD00989CA4 /* AppDelegate.swift */; };
 		CBAD9E9924A3E3DD00989CA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD9E9824A3E3DD00989CA4 /* SceneDelegate.swift */; };
 		CBAD9E9B24A3E3DD00989CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD9E9A24A3E3DD00989CA4 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA9F98BF2855B01500E1F042 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		CBAD9E9324A3E3DD00989CA4 /* CarSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAD9E9624A3E3DD00989CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBAD9E9824A3E3DD00989CA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				CBAD9EA124A3E3DE00989CA4 /* LaunchScreen.storyboard */,
 				CBAD9EA424A3E3DE00989CA4 /* Info.plist */,
 				CBAD9ECB24A3E73800989CA4 /* CarSample.entitlements */,
+				AA9F98BF2855B01500E1F042 /* SoundPlayer.swift */,
 			);
 			path = CarSample;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9F98C02855B01500E1F042 /* SoundPlayer.swift in Sources */,
 				CBAD9E9B24A3E3DD00989CA4 /* ViewController.swift in Sources */,
 				CBAD9E9724A3E3DD00989CA4 /* AppDelegate.swift in Sources */,
 				CBAD9ECA24A3E3FE00989CA4 /* CarPlaySceneDelegate.swift in Sources */,
