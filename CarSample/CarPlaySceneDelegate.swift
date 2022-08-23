@@ -89,7 +89,13 @@ class CarPlaySceneDelegate: UIResponder, CPTemplateApplicationSceneDelegate {
             print("clicked latitudeItem")
         })
         
-        let gridTemplate:CPGridTemplate = .init(title: "Location", gridButtons: [requestPermissionButton, startLocationButton, stopLocationButton, longitudeItem, latitudeItem])
+        let launchNavigatonAppButton: CPGridButton = .init(titleVariants: ["launch NavApp"], image: UIImage(systemName: imaegname)!, handler: { _ in
+            // 東京駅付近: 35.6812362,139.7649361
+            let url = URL(string: "http://maps.apple.com/?q=35.6812362,139.7649361&z=17")! // 緯度 / 経度指定
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        })
+
+        let gridTemplate:CPGridTemplate = .init(title: "Location", gridButtons: [requestPermissionButton, startLocationButton, stopLocationButton, longitudeItem, latitudeItem, launchNavigatonAppButton])
         // 位置情報の許可ステータスの表示
         self.interfaceController!.setRootTemplate(gridTemplate, animated: false)
     }

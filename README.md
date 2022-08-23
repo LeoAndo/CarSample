@@ -5,6 +5,7 @@ This is the sample from the WWDC 2020 Talk [Accelerate your app with CarPlay](ht
 # 変更点
 
 位置情報を定期取得し、位置情報の変更をトリガーにアイコン / タイトルを更新する調査用のコード。<br>
+Apple純正のMapアプリを起動する処理も追加。<br>
 TemplateUIには、Gridを採用。<br>
 
 [CarPlay-App-Programming-Guide.pdf](https://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf) のP17参照<br>
@@ -21,6 +22,6 @@ TemplateUIには、Gridを採用。<br>
 
 
 # capture (CarPlay / iPhone 13 Pro Max Simulator)
-<img src="https://github.com/LeoAndo/CarSample/blob/observe_location_grid/carPlay_capture.png" width=600 />
-<img src="https://github.com/LeoAndo/CarSample/blob/observe_location_grid/request_location_permission.png" width=320 />
+<img src="https://github.com/LeoAndo/CarSample/blob/observe_location_grid_with_launch_nav_app_button/carPlay_capture.png" width=600 />
+<img src="https://github.com/LeoAndo/CarSample/blob/observe_location_grid_with_launch_nav_app_button/request_location_permission.png" width=320 />
 
